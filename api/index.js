@@ -29,6 +29,6 @@ db.authenticate()
 
 //Starting server
 app.listen(app.get('port'),()=>{
-    //cron.everyminute();
+    cron.everyminute();
     console.log("Server on port",app.get('port'))
 })
