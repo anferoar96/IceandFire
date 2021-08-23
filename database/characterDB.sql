@@ -10,7 +10,7 @@ CREATE TABLE iceandfire.characters (
 	culture varchar NOT NULL,
 	born varchar NULL,
 	died varchar NULL,
-	createdAt timestamp NOT NULL,
+	"createdAt" timestamp NOT NULL,
 	CONSTRAINT characters_pk PRIMARY KEY (id)
 );
 
