@@ -1,0 +1,28 @@
+<div class="container">
+    <br>
+    <button type="button" class="btn" (click)="getCharacters()">
+        <i class="fa fa-spinner fa-lg"></i>
+        Recargar
+    </button>
+    <br>
+    &nbsp;
+    <div *ngIf="characters!=undefined">
+        
+        <div class="row">
+            <div class="col-sm-3 col-xs-12" *ngFor="let character of characters">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><b>Nombre: </b>{{character.name}}</p>
+                        <p class="card-text"><b>Genero: </b>{{character.gender}}</p>
+                        <p class="card-text" *ngIf="character.culture!=''"><b>Cultura: </b>{{character.culture}}</p>
+                        <p class="card-text" *ngIf="character.born!=''"><b>Nacimiento: </b>{{character.born}}</p>
+                        <p class="card-text" *ngIf="character.died!=''"><b>Muerte: </b>{{character.died}}</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    
+</div>
+
